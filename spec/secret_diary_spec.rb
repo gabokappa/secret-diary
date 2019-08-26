@@ -11,7 +11,7 @@ describe SecretDiary do
 
   describe '#lock' do
     it 'throw and error if already locked' do
-    expect { diary.lock }. to raise_error 'Diary already locked'
+      expect { diary.lock }. to raise_error 'Diary already locked'
     end
   end
 end

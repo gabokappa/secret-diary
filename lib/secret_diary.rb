@@ -3,7 +3,7 @@ class SecretDiary
   attr_reader :locked
   def initialize
     @locked = 1
-     @entries = []
+    @entries = []
   end
 
   def unlock

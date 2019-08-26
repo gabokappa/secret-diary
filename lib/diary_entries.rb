@@ -4,6 +4,7 @@ class DiaryEntries < SecretDiary
     @entries = []
     @locked = 1
   end
+
   def add_entry(entry, diary)
     fail 'Diary locked' if diary.locked == 1
 
@@ -16,5 +17,4 @@ class DiaryEntries < SecretDiary
 
     @entries[entry]
   end
-
 end
